@@ -253,7 +253,7 @@ class PhotoEditor(QMainWindow):
 
     def rotate90cw(self):
 
-        if not self.img<F4>_pix.isNull():
+        if not self.img_pix.isNull():
             trans = QTransform()
             trans1 = trans.rotate(90, Qt.Axis.ZAxis)
             pixmap = QPixmap(self.img_pix)
